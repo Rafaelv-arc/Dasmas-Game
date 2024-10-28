@@ -1,0 +1,54 @@
+/* src/styles/styles.css */
+
+/* Estilos gerais do contêiner do tabuleiro e da mensagem de erro */
+.container {
+  display: flex; /* Flexbox para centralizar o tabuleiro */
+  flex-direction: column; /* Alinha os filhos na direção da coluna */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilos gerais do tabuleiro */
+.conseil {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px; /* Espaçamento entre o tabuleiro e a mensagem */
+}
+
+/* Estilos para os quadrados do tabuleiro */
+.square-black {
+  background-color: #b58863; /* Cor do quadrado preto */
+  width: 100%;
+  height: 100%;
+}
+
+.square-white {
+  background-color: #f0d9b5; /* Cor do quadrado branco */
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos para as peças */
+.piece-black {
+  width: 80%;
+  height: 80%;
+  background-color: black;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.piece-white {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* Estilos para a mensagem de erro */
+.error-message {
+  color: red; /* Cor da mensagem de erro */
+  font-weight: bold; /* Negrito para a mensagem */
+  font-size: 16px; /* Tamanho da fonte */
+}
