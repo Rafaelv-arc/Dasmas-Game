@@ -1,0 +1,40 @@
+/* src/styles/App.css */
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 90vw;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.square {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+
+.square.black {
+  background-color: #4A4A4A;
+}
+
+.square.white {
+  background-color: #FFFFFF;
+}
+
+.piece {
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.piece.white {
+  background-color: #FFF;
+}
+
+.piece.black {
+  background-color: #000;
+}
